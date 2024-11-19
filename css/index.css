@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset and Base Styles */
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-image: url('../assets/indexImg.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Container for Index Section */
+.index-section {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.all {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.hero-logo img {
+  width: 150px; /* Adjusted for mobile responsiveness */
+}
+
+.hero-content p {
+  font-size: 14px; /* Adjusted for smaller screens */
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Mobile-Only Styles */
+@media only screen and (max-width: 768px) {
+  .hero-logo img {
+    width: 120px; /* Further reduced for smaller devices */
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .index-section {
+    gap: 15px;
+  }
+}

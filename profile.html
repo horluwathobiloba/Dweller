@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dweller Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="arrow" onclick="goBack()">
+        <img src="assets/icon/Left Arrow.svg" alt="Back">
+    </div>
+       
+    <div class="container">
+        <div class="header">
+            <h2>Set up your profile</h2>
+        </div>
+        <div class="form">
+            <div class="both">
+                <div class="mai">
+                    <label for="Number">This will show on your profile.</label>
+                    <input type="value" id="PhoneNo" placeholder="Phone Number">
+                    <input type="number" id="age" placeholder="Age">
+                    
+                    <!-- Gender dropdown -->
+                    <select id="gender">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <input type="text" id="Occupation" placeholder="Occupation">
+                </div>
+            </div>
+    
+            <button type="button" onclick="window.location.href='password.html'">Next</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
